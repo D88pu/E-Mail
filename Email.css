@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;600;700&family=Borel&family=Fira+Sans:ital,wght@0,100;0,200;1,100&family=Poppins:ital,wght@1,100&family=Roboto:wght@100&family=Varela+Round&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans', sana-serif;
+    font-family: sans-serif;
+}
+body{
+    background: rgb(214, 178, 214);
+}
+
+nav {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+
+
+}
+
+.logo img{
+    filter: invert(1); /* logo ues to changing filter*/
+    
+    width: 15px;
+    
+}
+
+ 
+
+ul {
+    display: flex;
+}
+
+
+ul li {
+    list-style: none;
+    padding: 0 13px;
+    font-size: 16px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/*-----------------hover--------------------------------*/
+ul>li>a:hover {
+    color: rgb(109, 152, 233);
+    /*hover is use to world change color*/
+}
+
+/*--------------------Main-------------------------*/
+
+main{
+    min-height:100vh;
+}
+
+/*-------------------Container--------------------------------*/
+.container{
+    max-width:80vw;
+    margin:auto;
+    padding: 9px 15px;
+}
+
+.container h1{
+    padding: 12px 0px;
+}
+
+
+ 
+
+
+.btn{
+    background-color: rgb(201, 171, 201);
+    color: white;
+    padding: 10px 12px;
+    border: 1px  solid gray;
+    border-radius:12px;
+    cursor: pointer;/*cursor in used in hands*/
+
+}
+
+#resultCont div::first-letter{
+    text-transform: uppercase;
+}
+
+input[type='text']{
+    min-width:23vw;
+    padding: 3px 12px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+footer {
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    color: white;
+}
+
+@media only screen and (max-width:600px){
+    
+    .container{
+        font-size: 12px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        padding: 6px 0;
+    }
+    .logo img{
+        width: 15px;
+        filter:invert(1) ;
+    }
+}
